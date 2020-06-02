@@ -22,6 +22,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
+
 # Updater
 ifneq ($(TARGET_INCLUDE_UPDATER),false)
 PRODUCT_PACKAGES += \
