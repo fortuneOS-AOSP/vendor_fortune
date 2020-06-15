@@ -58,7 +58,8 @@ endif
 
 # Lineage-specific init rc file
 PRODUCT_COPY_FILES += \
-    vendor/fortune/prebuilt/common/etc/init/init.lineage-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-system_ext.rc
+    vendor/fortune/prebuilt/common/etc/init/init.lineage-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-system_ext.rc \
+    vendor/fortune/config/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
