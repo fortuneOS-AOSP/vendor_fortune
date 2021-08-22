@@ -78,6 +78,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PIHOOKS_BUILD_FINGERPRINT="google/caiman/caiman:14/AD1A.240530.047.U1/12150698:user/release-keys" \
     PIHOOKS_MODEL_SPOOF="Pixel 9 Pro"
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Updater
 ifeq ($(filter-out COMMUNITY,$(FORTUNE_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
