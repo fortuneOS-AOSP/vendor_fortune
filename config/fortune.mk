@@ -23,6 +23,7 @@ endif
 
 # Extra packages
 PRODUCT_PACKAGES += \
+    BatteryStatsViewer \
     GameSpace \
     OmniJaws
 
