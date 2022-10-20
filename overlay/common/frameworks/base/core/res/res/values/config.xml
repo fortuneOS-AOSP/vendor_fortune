@@ -63,6 +63,8 @@
         <item>com.android.cellbroadcastservice</item>
         <!-- OmniJaws -->
         <item>org.omnirom.omnijaws</item>
+        <!-- SystemUI -->
+        <item>com.android.systemui</item>
     </string-array>
 
     <!-- The list of components which should be automatically disabled for all devices. -->
