@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # Gapps
 $(call inherit-product, vendor/gms/products/gms.mk)
 
