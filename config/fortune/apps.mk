@@ -10,6 +10,10 @@ PRODUCT_PACKAGES += \
     Aperture
 endif
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # Config
 PRODUCT_PACKAGES += \
     SimpleSettingsConfig
