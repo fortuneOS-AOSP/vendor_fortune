@@ -90,7 +90,6 @@ endif
 
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig \
     SimpleSettingsConfig
 
 # Extra tools in Lineage
