@@ -43,4 +43,7 @@
     <string name="config_bt_slice_extra_pending_intent">com.google.android.gms.nearby.discovery.EXTRA_PENDING_INTENT</string>
     <string name="config_bt_slice_intent_action">com.google.android.gms.nearby.discovery.ACTION_LOG_SLICE_AND_LAUNCH_INTENT</string>
     <string name="config_bt_slice_pending_intent_action">com.google.android.gms.nearby.discovery.ACTION_LOG_SLICE_AND_SEND_PENDING_INTENT</string>
+
+    <!-- Whether to display Cloned Apps page in Settings (Settings > Apps > Cloned Apps).-->
+    <bool name="config_cloned_apps_page_enabled">true</bool>
 </resources>
