@@ -7,6 +7,10 @@
 # Addons
 include vendor/addons/config.mk
 
+# Extra packages
+PRODUCT_PACKAGES += \
+    OmniJaws
+
 # Keepers
 include vendor/fortune/config/keepers.mk
 
