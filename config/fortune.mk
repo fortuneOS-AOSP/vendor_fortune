@@ -37,6 +37,24 @@ endif
 # GMS
 $(call inherit-product, vendor/gms/products/gms.mk)
 
+# Launcher
+TARGET_DEFAULT_PIXEL_LAUNCHER ?= true
+ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
+# Pixel Launcher
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.default_launcher=1 \
+    persist.sys.quickswitch_pixel_shipped=1
+else
+# Launcher3
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.default_launcher=0 \
+    persist.sys.quickswitch_pixel_shipped=0
+endif
+
+PRODUCT_PACKAGES += \
+    AndroidOverlay \
+    Launcher3QuickStep
+
 # Mainline spoofing
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.pihooks_mainline_BRAND?=google \
