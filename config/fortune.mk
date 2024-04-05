@@ -86,3 +86,7 @@ ifeq ($(filter-out COMMUNITY,$(FORTUNE_BUILD_TYPE)),)
 PRODUCT_COPY_FILES += \
     vendor/fortune/prebuilt/common/etc/init/init.fortune-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.fortune-updater.rc
 endif
+
+# Workaround AOSP AM crash
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.fflag.override.settings_enable_monitor_phantom_procs=false
