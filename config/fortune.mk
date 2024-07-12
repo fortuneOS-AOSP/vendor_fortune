@@ -15,6 +15,12 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1
 endif
 
+TARGET_USES_BLUR_RECENT ?= true
+ifeq ($(TARGET_USES_BLUR_RECENT), true)
+PRODUCT_PACKAGES += \
+    PixelLauncherOverlayBlur
+endif
+
 # Extra packages
 PRODUCT_PACKAGES += \
     GameSpace \
