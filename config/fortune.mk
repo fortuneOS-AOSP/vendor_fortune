@@ -17,6 +17,7 @@ endif
 
 # Extra packages
 PRODUCT_PACKAGES += \
+    GameSpace \
     OmniJaws
 
 # Face Unlock
