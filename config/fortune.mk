@@ -21,6 +21,11 @@ PRODUCT_PACKAGES += \
     PixelLauncherOverlayBlur
 endif
 
+# Cache clenaer
+PRODUCT_PACKAGES += \
+    init.cache_cleaner.rc \
+    init.cache_cleaner.sh
+
 # Extra packages
 PRODUCT_PACKAGES += \
     BatteryStatsViewer \

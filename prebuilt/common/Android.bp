@@ -11,3 +11,14 @@ prebuilt_etc_xml {
     src: "etc/sensitive_pn.xml",
     schema: ":spn-schema",
 }
+
+sh_binary {
+    name: "init.cache_cleaner.sh",
+    src: "bin/init.cache_cleaner.sh",
+}
+
+prebuilt_etc {
+    name: "init.cache_cleaner.rc",
+    src: "etc/init/init.cache_cleaner.rc",
+    sub_dir: "init",
+}

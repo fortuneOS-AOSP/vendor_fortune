@@ -1,0 +1,9 @@
+on post-fs-data
+    start cache-cleaner-sh
+
+service cache-cleaner-sh /system/bin/init.cache_cleaner.sh
+    class late_start
+    user root
+    group root system
+    disabled
+    oneshot
