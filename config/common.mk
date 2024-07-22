@@ -183,7 +183,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
     Settings \
     NexusLauncherRelease \
-    SystemUI
+    SystemUI \
+    Lawnchair
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
