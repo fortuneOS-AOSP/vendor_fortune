@@ -1,5 +1,5 @@
 # Inherit common mobile stuff
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/fortune/config/common.mk)
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
