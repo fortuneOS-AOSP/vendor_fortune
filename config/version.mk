@@ -1,38 +1,25 @@
-PRODUCT_VERSION_MAJOR = 21
-PRODUCT_VERSION_MINOR = 0
+#
+# Copyright (C) 2024 FortuneOS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
-ifeq ($(LINEAGE_VERSION_APPEND_TIME_OF_DAY),true)
-    LINEAGE_BUILD_DATE := $(shell date -u +%Y%m%d_%H%M%S)
-else
-    LINEAGE_BUILD_DATE := $(shell date -u +%Y%m%d)
-endif
+FORTUNE_ANDROID := 14.0
+FORTUNE_REVISION := 2.0
+FORTUNE_CODENAME := Usagi
+FORTUNE_BUILD_DATE := $(shell date +"%d%m%Y-%H%M")
 
-# Set LINEAGE_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
+FORTUNE_VERSION := \
+   ID.FRTN.v$(FORTUNE_REVISION)-$(FORTUNE_BUILD)-$(FORTUNE_BUILD_TYPE)-$(FORTUNE_BUILD_DATE)
 
-ifndef LINEAGE_BUILDTYPE
-    ifdef RELEASE_TYPE
-        # Starting with "LINEAGE_" is optional
-        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^LINEAGE_||g')
-        LINEAGE_BUILDTYPE := $(RELEASE_TYPE)
-    endif
-endif
+FORTUNE_DISPLAY_VERSION := \
+   $(FORTUNE_REVISION)-$(FORTUNE_CODENAME)-$(FORTUNE_BUILD_TYPE)
 
-# Filter out random types, so it'll reset to UNOFFICIAL
-ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
-    LINEAGE_BUILDTYPE := UNOFFICIAL
-    LINEAGE_EXTRAVERSION :=
-endif
-
-ifeq ($(LINEAGE_BUILDTYPE), UNOFFICIAL)
-    ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
-        LINEAGE_EXTRAVERSION := -$(TARGET_UNOFFICIAL_BUILD_ID)
-    endif
-endif
-
-LINEAGE_VERSION_SUFFIX := $(LINEAGE_BUILD_DATE)-$(LINEAGE_BUILDTYPE)$(LINEAGE_EXTRAVERSION)-$(LINEAGE_BUILD)
-
-# Internal version
-LINEAGE_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_VERSION_SUFFIX)
-
-# Display version
-LINEAGE_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR)-$(LINEAGE_VERSION_SUFFIX)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    org.fortune.android=$(FORTUNE_ANDROID) \
+    org.fortune.build.date=$(FORTUNE_BUILD_DATE) \
+    org.fortune.build.type=$(FORTUNE_BUILD_TYPE) \
+    org.fortune.display.version=$(FORTUNE_DISPLAY_VERSION) \
+    org.fortune.codename=$(FORTUNE_CODENAME) \
+    org.fortune.revision=$(FORTUNE_REVISION) \
+    org.fortune.version=$(FORTUNE_VERSION)
