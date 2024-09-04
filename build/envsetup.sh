@@ -1,12 +1,3 @@
-function __print_fortune_functions_help() {
-cat <<EOF
-Additional FortuneOS functions:
-- cout:            Changes directory to out.
-- mka:             Builds using SCHED_BATCH on all processors.
-- sort-blobs-list: Sort proprietary-files.txt sections with LC_ALL=C.
-EOF
-}
-
 # check to see if the supplied product is one we can build
 function check_product()
 {
