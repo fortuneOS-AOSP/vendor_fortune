@@ -22,4 +22,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.android.mobiledata=false
 
 # Inherit full common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full.mk)
+$(call inherit-product, vendor/fortune/config/common_full.mk)

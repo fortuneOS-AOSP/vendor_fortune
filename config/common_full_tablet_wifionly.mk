@@ -8,5 +8,5 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.settings.large_screen_opt.enabled=true
 
 # Inherit full common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full.mk)
-$(call inherit-product, vendor/aosp/config/wifionly.mk)
+$(call inherit-product, vendor/fortune/config/common_full.mk)
+$(call inherit-product, vendor/fortune/config/wifionly.mk)

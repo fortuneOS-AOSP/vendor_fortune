@@ -21,7 +21,7 @@ import importlib
 
 def main(argv):
     importlib.reload(sys)
-    original_file = 'vendor/aosp/prebuilt/common/etc/apns-conf.xml'
+    original_file = 'vendor/fortune/prebuilt/common/etc/apns-conf.xml'
 
     if len(argv) == 3:
         output_file_path = argv[1]

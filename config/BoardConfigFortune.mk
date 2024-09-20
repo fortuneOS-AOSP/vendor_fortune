@@ -1,7 +1,7 @@
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE ?= true
 
-include vendor/aosp/config/BoardConfigKernel.mk
+include vendor/fortune/config/BoardConfigKernel.mk
 
 # Dex2oat
 ifeq ($(TARGET_CPU_VARIANT),cortex-a510)
@@ -14,7 +14,4 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 	include hardware/qcom-caf/common/BoardConfigQcom.mk
 endif
 
-include vendor/aosp/config/BoardConfigSoong.mk
-
-# Parasite vendor configurations
-include vendor/parasite/common/BoardConfig.mk
+include vendor/fortune/config/BoardConfigSoong.mk

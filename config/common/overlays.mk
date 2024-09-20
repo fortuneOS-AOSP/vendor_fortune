@@ -1,9 +1,9 @@
 # Non-Runtime Resource Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/aosp/overlay
+    vendor/fortune/overlay
 
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/aosp/overlay/common
+    vendor/fortune/overlay/common
 
 # Cutout control overlay
 PRODUCT_PACKAGES += \

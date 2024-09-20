@@ -44,7 +44,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     zygote.critical_window.minute?=10
 
 # Inherit art options
-include vendor/aosp/config/common/art.mk
+include vendor/fortune/config/common/art.mk
 
 # Inherit LMKD options
-include vendor/aosp/config/common/lmkd.mk
+include vendor/fortune/config/common/lmkd.mk

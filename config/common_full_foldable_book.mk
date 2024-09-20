@@ -1,7 +1,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 
 # Inherit common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/fortune/config/common_full_phone.mk)
 
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \

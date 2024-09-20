@@ -1,5 +1,5 @@
 # Branding
-$(call inherit-product, vendor/aosp/config/branding.mk)
+$(call inherit-product, vendor/fortune/config/branding.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -36,31 +36,13 @@ PRODUCT_PACKAGES += \
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# Apps
-$(call inherit-product, vendor/aosp/config/common/apps.mk)
-
-# Configs
-$(call inherit-product, vendor/aosp/config/common/configs.mk)
-
-# Fonts
-$(call inherit-product, vendor/aosp/config/common/fonts.mk)
-
-# Languages
-$(call inherit-product, vendor/aosp/config/common/languages.mk)
-
-# Optimisation
-$(call inherit-product, vendor/aosp/config/common/optimisation.mk)
-
-# Parasite vendor configurations
-$(call inherit-product, vendor/parasite/common/config.mk)
-
-# Properties
-$(call inherit-product, vendor/aosp/config/common/properties.mk)
-
-# Overlays
-$(call inherit-product, vendor/aosp/config/common/overlays.mk)
-
-# Tools
-$(call inherit-product, vendor/aosp/config/common/tools.mk)
+$(call inherit-product, vendor/fortune/config/common/apps.mk)
+$(call inherit-product, vendor/fortune/config/common/configs.mk)
+$(call inherit-product, vendor/fortune/config/common/fonts.mk)
+$(call inherit-product, vendor/fortune/config/common/languages.mk)
+$(call inherit-product, vendor/fortune/config/common/optimisation.mk)
+$(call inherit-product, vendor/fortune/config/common/properties.mk)
+$(call inherit-product, vendor/fortune/config/common/overlays.mk)
+$(call inherit-product, vendor/fortune/config/common/tools.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
