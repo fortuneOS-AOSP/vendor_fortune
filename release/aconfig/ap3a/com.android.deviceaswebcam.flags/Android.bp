@@ -1,5 +1,5 @@
 aconfig_values {
-    name: "aconfig-values-ap2a-com.android.deviceaswebcam.flags-all",
+    name: "aconfig-values-ap3a-com.android.deviceaswebcam.flags-all",
     package: "com.android.deviceaswebcam.flags",
     srcs: [
         "*.textproto",
