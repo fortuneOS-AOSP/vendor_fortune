@@ -58,6 +58,9 @@ PRODUCT_PACKAGES += \
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# GMS
+$(call inherit-product, vendor/google/gms/products/gms.mk)
+
 $(call inherit-product, vendor/fortune/config/common/apps.mk)
 $(call inherit-product, vendor/fortune/config/common/configs.mk)
 $(call inherit-product, vendor/fortune/config/common/fonts.mk)
