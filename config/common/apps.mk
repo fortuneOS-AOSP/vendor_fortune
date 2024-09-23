@@ -19,10 +19,6 @@ PRODUCT_PACKAGES += \
 endif #TARGET_INCLUDE_APERTURE
 endif #PRODUCT_NO_CAMERA
 
-# Game Space
-PRODUCT_PACKAGES += \
-    GameSpace
-
 # SystemUI Flag configuration
 PRODUCT_PACKAGES += \
     SystemUIFlagFlipper
