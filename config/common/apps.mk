@@ -40,22 +40,3 @@ ifneq ($(TARGET_INCLUDE_UPDATER),false)
 PRODUCT_PACKAGES += \
     Updater
 endif #TARGET_INCLUDE_UPDATER
-
-# Face Unlock
-ifeq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
-
-PRODUCT_PACKAGES += \
-    AOSPASettingsOverlay
-
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-PRODUCT_PACKAGES += \
-    ParanoidSense
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.face.sense_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
-endif
