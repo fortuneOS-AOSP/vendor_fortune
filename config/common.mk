@@ -39,9 +39,6 @@ ifeq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_SYSTEM_PROPERTIES += ro.adb.secure=0
 PRODUCT_SYSTEM_PROPERTIES += ro.adb.secure.recovery=0
 else
-# Enable ADB authentication
-PRODUCT_SYSTEM_PROPERTIES += ro.adb.secure=1
-
 # Disable extra StrictMode features on all non-engineering builds
 PRODUCT_SYSTEM_PROPERTIES += persist.sys.strictmode.disable=true
 endif
