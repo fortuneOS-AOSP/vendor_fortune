@@ -13,8 +13,8 @@ if [[ -f $file_path ]]; then
     sha256=$(cut -d' ' -f1 "$file_path".sha256sum)
     datetime=$(grep -w "ro\\.build\\.date\\.utc=.*" "$buildprop" | cut -d= -f2)
     version=$(grep -w "ro\\.build\\.version\\.release_or_preview_display=.*" $buildprop | cut -d= -f2)
-    romtype=$(grep -w "ro\\.custom\\.releasetype=.*" $buildprop | cut -d= -f2)
-    link="https://sourceforge.net/projects/theparasiteproject/files/${device_name}/${file_name}/download"
+    romtype=$(grep -w "org\\.fortune\\.releasetype=.*" $buildprop | cut -d= -f2)
+    link="https://sourceforge.net/projects/fortuneos/files/${device_name}/${file_name}/download"
     cat >"$file_path".json <<JSON
 {
   "response": [
@@ -30,6 +30,6 @@ if [[ -f $file_path ]]; then
   ]
 }
 JSON
-    mv "$file_path".json "${OUT_DIR:-out}"/target/product/"$device_name"/update.json
-    echo -e "${GREEN}Done generating update.json for $device_name"
+    mv "$file_path".json "${OUT_DIR:-out}"/target/product/"$device_name"/"$device_name".json
+    echo -e "${GREEN}Done generating json for $device_name"
 fi
