@@ -63,5 +63,6 @@ $(call inherit-product, vendor/fortune/config/common/optimisation.mk)
 $(call inherit-product, vendor/fortune/config/common/properties.mk)
 $(call inherit-product, vendor/fortune/config/common/overlays.mk)
 $(call inherit-product, vendor/fortune/config/common/tools.mk)
+$(call inherit-product, vendor/fortune-extras/config.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
