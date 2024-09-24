@@ -57,7 +57,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 $(call inherit-product, vendor/fortune/config/common/apps.mk)
 $(call inherit-product, vendor/fortune/config/common/configs.mk)
-$(call inherit-product, vendor/fortune/config/common/fonts.mk)
 $(call inherit-product, vendor/fortune/config/common/languages.mk)
 $(call inherit-product, vendor/fortune/config/common/optimisation.mk)
 $(call inherit-product, vendor/fortune/config/common/properties.mk)
