@@ -1,7 +1,9 @@
 # Inherit device/qcom/common, QCOM core-utils and exclude QCOM SEPolicy
+ifeq ($(TARGET_EXCLUDES_QC_COMMON),true)
 TARGET_EXCLUDE_QCOM_SEPOLICY := true
 $(call inherit-product, device/qcom/common/common.mk)
 include vendor/qcom/opensource/core-utils/build/utils.mk
+endif
 
 # Branding
 $(call inherit-product, vendor/fortune/config/branding.mk)
