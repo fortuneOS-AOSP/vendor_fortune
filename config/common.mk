@@ -41,17 +41,15 @@ endif
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
-ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
 PRODUCT_SYSTEM_PROPERTIES += ro.adb.secure=0
 PRODUCT_SYSTEM_PROPERTIES += ro.adb.secure.recovery=0
-else
+
 # Disable extra StrictMode features on all non-engineering builds
 PRODUCT_SYSTEM_PROPERTIES += persist.sys.strictmode.disable=true
 
 # Disable debug and verbose logging by default
 PRODUCT_SYSTEM_PROPERTIES += log.tag=I
-endif
 
 # To prevent rebooting due to crashing services
 PRODUCT_SYSTEM_PROPERTIES += \
