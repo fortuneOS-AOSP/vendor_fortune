@@ -25,5 +25,5 @@ xsd_config {
     name: "spn-info",
     srcs: [":spn-schema"],
     api_dir: "schema",
-    package_name: "org.lineageos.lib.phone.spn",
+    package_name: "org.fortune.lib.phone.spn",
 }

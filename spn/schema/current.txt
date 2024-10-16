@@ -1,5 +1,5 @@
 // Signature format: 2.0
-package org.lineageos.lib.phone.spn {
+package org.fortune.lib.phone.spn {
 
   public class Item {
     ctor public Item();
@@ -19,19 +19,19 @@ package org.lineageos.lib.phone.spn {
 
   public class SensitivePN {
     ctor public SensitivePN();
-    method public java.util.List<org.lineageos.lib.phone.spn.Item> getItem();
+    method public java.util.List<org.fortune.lib.phone.spn.Item> getItem();
     method public String getNetwork();
     method public void setNetwork(String);
   }
 
   public class SensitivePNS {
     ctor public SensitivePNS();
-    method public java.util.List<org.lineageos.lib.phone.spn.SensitivePN> getSensitivePN();
+    method public java.util.List<org.fortune.lib.phone.spn.SensitivePN> getSensitivePN();
   }
 
   public class XmlParser {
     ctor public XmlParser();
-    method public static org.lineageos.lib.phone.spn.SensitivePNS read(java.io.InputStream) throws javax.xml.datatype.DatatypeConfigurationException, java.io.IOException, org.xmlpull.v1.XmlPullParserException;
+    method public static org.fortune.lib.phone.spn.SensitivePNS read(java.io.InputStream) throws javax.xml.datatype.DatatypeConfigurationException, java.io.IOException, org.xmlpull.v1.XmlPullParserException;
     method public static String readText(org.xmlpull.v1.XmlPullParser) throws java.io.IOException, org.xmlpull.v1.XmlPullParserException;
     method public static void skip(org.xmlpull.v1.XmlPullParser) throws java.io.IOException, org.xmlpull.v1.XmlPullParserException;
   }
