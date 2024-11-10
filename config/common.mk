@@ -57,6 +57,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
+# Gamespace
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # To prevent rebooting due to crashing services
 PRODUCT_SYSTEM_PROPERTIES += \
     init.svc_debug.no_fatal.zygote=true \
