@@ -1,5 +1,5 @@
 # Inherit common stuff
-$(call inherit-product, vendor/aosp/config/common_mobile.mk)
+$(call inherit-product, vendor/fortune/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 

@@ -1,4 +1,4 @@
-function __print_custom_functions_help() {
+function __print_fortune_functions_help() {
 cat <<EOF
 Additional functions:
 - cout:            Changes directory to out.
@@ -7,7 +7,7 @@ Additional functions:
 - mmmp:            Builds all of the modules in the supplied directories and pushes them to the device.
 - aospremote:      Add git remote for matching AOSP repository.
 - cloremote:       Add git remote for matching CodeLinaro repository.
-- githubremote:    Add git remote for PixelOS-AOSP Github.
+- githubremote:    Add git remote for FortuneOS-AOSP Github.
 - mka:             Builds using SCHED_BATCH on all processors.
 - mkap:            Builds the module(s) using mka and pushes them to the device.
 - cmka:            Cleans and builds using mka.

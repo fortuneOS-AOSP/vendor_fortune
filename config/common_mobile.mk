@@ -1,14 +1,5 @@
 # Inherit common mobile stuff
-$(call inherit-product, vendor/aosp/config/common.mk)
-
-# Google Apps
-WITH_GMS ?= true
-ifeq ($(WITH_GMS),true)
-$(call inherit-product, vendor/gms/products/gms.mk)
-else
-PRODUCT_PACKAGES += \
-    LatinIME
-endif
+$(call inherit-product, vendor/fortune/config/common.mk)
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \

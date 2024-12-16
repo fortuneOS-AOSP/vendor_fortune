@@ -30,14 +30,6 @@
     <!-- Whether wallpaper attribution should be shown or not. -->
     <bool name="config_show_wallpaper_attribution">false</bool>
 
-    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
-    <string name="config_wallpaper_picker_package" translatable="false">com.google.android.apps.wallpaper</string>
-    <string name="config_wallpaper_picker_class" translatable="false">com.google.android.apps.wallpaper.picker.CategoryPickerActivity</string>
-    <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
-    <string name="config_styles_and_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
-    <!-- Action name for the styles & wallpaper picker activity. -->
-    <string name="config_styles_and_wallpaper_picker_action" translatable="false">android.intent.action.SET_WALLPAPER</string>
-
     <string name="config_battery_prediction_authority">com.google.android.apps.turbo.bluetooth.estimated_time_remaining</string>
     <string name="config_bluetooth_device_settings_uri">content://com.google.android.apps.wearables.maestro.companion/settings_slice?addr=%1$s</string>
     <string name="config_bt_slice_extra_intent">com.google.android.gms.nearby.discovery.EXTRA_INTENT</string>

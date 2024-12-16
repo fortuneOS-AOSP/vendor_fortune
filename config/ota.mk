@@ -4,5 +4,5 @@ ifeq ($(IS_OFFICIAL),true)
         Updates
 
     PRODUCT_COPY_FILES += \
-        vendor/aosp/prebuilt/common/etc/init/init.custom-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.custom-updater.rc
+        vendor/fortune/prebuilt/common/etc/init/init.fortune-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.fortune-updater.rc
 endif
